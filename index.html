@@ -5,13 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OriginSix</title>
-    <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./assets/fonts/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
       rel="stylesheet"
+    />
     />
   </head>
   <body>
@@ -128,9 +133,77 @@
           </div>
         </div>
       </section>
-    </main>
-    <footer></footer>
 
+      <div class="divider-1"></div>
+
+      <section class="section" id="testemonials">
+        <div class="container">
+          <header>
+            <h2 class="title">Depoimentos de quem já passou por aqui</h2>
+          </header>
+          <div class="testemonials swiper-container">
+            <div class="swiper-wrapper">
+              <div class="testemonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Earum blanditiis accusantium cumque at, saepe repudiandae
+                    perspiciatis
+                  </p>
+                  <cite>
+                    <img
+                      src="https://randomuser.me/api/portraits/women/76.jpg"
+                      alt="Foto de Cintia Silva"
+                    />
+                    Cintia Silva
+                  </cite>
+                </blockquote>
+              </div>
+              <div class="testemonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Earum blanditiis accusantium cumque at, saepe repudiandae
+                    perspiciatis
+                  </p>
+                  <cite>
+                    <img
+                      src="https://randomuser.me/api/portraits/men/20.jpg"
+                      alt="Foto de Gabriel Malfoi"
+                    />
+                    Gabriel Malfoi
+                  </cite>
+                </blockquote>
+              </div>
+              <div class="testemonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Earum blanditiis accusantium cumque at, saepe repudiandae
+                    perspiciatis
+                  </p>
+                  <cite>
+                    <img
+                      src="https://randomuser.me/api/portraits/men/95.jpg"
+                      alt="Foto de Matheus Bozetti"
+                    />
+                    Matheus Bozetti
+                  </cite>
+                </blockquote>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-2"></div>
+    </main>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./main.js"></script>
   </body>
 </html>
