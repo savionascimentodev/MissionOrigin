@@ -31,6 +31,8 @@ img {
     --text-color: hsl(0 0% 46%);
     --text-color-light: hsl(0 0% 98%);
     --body-color: hsl(0 0% 98%);
+
+    /* --title-font-size: */
 }
 
 /*----------------- BASE ---------------------*/
@@ -129,12 +131,12 @@ body {
   transition: 0.3s;
 }
 
-#header.scroll .logo span{
+#header.scroll .logo span {
   color: white;
   transition: 0.3s;
 }
 
-#header.scroll .icon-menu{
+#header.scroll .icon-menu {
   color: white;
   transition: 0.3s;
 }
@@ -145,13 +147,17 @@ main {
 }
 
 /*----------------- LOGO ---------------------*/
-.logo{
+.logo {
   font: 700 1.31rem 'Poppins', sans-serif;
   color: var(--title-color);
 }
 
 .logo span {
   color: var(--base-color);
+}
+
+.logo-alt span{
+  color: var(--body-color);
 }
 
 /*----------------- NAVIGATION ---------------------*/
@@ -230,7 +236,7 @@ nav.show ul.grid {
 }
 
 /*--------- Toggle Menu ---------*/
-.toggle{
+.toggle {
   color: var(--base-color);
   font-size: 1.5rem;
   cursor: pointer;
@@ -410,7 +416,7 @@ nav.show div.icon-close {
 }
 
 /*--------- Swiper ---------*/
-.swiper-slide{
+.swiper-slide {
   height: auto;
   padding: 4rem 1rem;
 }
@@ -446,4 +452,67 @@ nav.show div.icon-close {
 
 #contact ul li i {
   color: var(--base-color);
+}
+
+/*----------------- FOOTER ---------------------*/
+footer {
+  background: var(--base-color);
+}
+
+footer .logo {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+footer .brand p {
+  color: var(--text-color-light);
+  margin-bottom: 0.75rem;
+}
+
+footer i {
+  font-size: 1.5rem;
+  color: var(--text-color-light)
+}
+
+footer .social a {
+  margin-right: 2rem;
+  transition: 0.3s;
+  display: inline-block
+}
+footer .social a:hover {
+  transform: translateY(-8px)
+}
+
+/*--------- Back to top ---------*/
+.back-to-top {
+  background: var(--base-color);
+  color: var(--text-color-light);
+
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+
+  padding: 0.5rem;
+  clip-path: circle();
+
+  font-size: 1.5rem;
+  line-height: 0;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+  transform: translateY(200%);
+}
+
+.back-to-top.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+/*----------------- RESPONSIVE ---------------------*/
+@media (min-width: 992px) {  
+  :root {
+    --title-font-size: 2.2rem;
+  } 
 }
