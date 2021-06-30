@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?pb82g0');
-  src:  url('fonts/icomoon.eot?pb82g0#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?pb82g0') format('truetype'),
-    url('fonts/icomoon.woff?pb82g0') format('woff'),
-    url('fonts/icomoon.svg?pb82g0#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?u4pvx7');
+  src:  url('fonts/icomoon.eot?u4pvx7#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?u4pvx7') format('truetype'),
+    url('fonts/icomoon.woff?u4pvx7') format('woff'),
+    url('fonts/icomoon.svg?u4pvx7#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,11 +25,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-arrow-up:before {
-  content: "\e90c";
+.icon-logo-barber-shop:before {
+  content: "\e90d";
 }
-.icon-phone:before {
+.icon-barber:before {
   content: "\e900";
+}
+.icon-clipart:before {
+  content: "\1f31a";
 }
 .icon-close:before {
   content: "\e901";
